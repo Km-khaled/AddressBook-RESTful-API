@@ -1,67 +1,67 @@
-# Carnet d'adresses RESTful API
+# Address Book RESTful API
 
-Cette application est une API RESTful développée en Java avec Jersey qui permet de gérer un carnet d'adresses. Elle fournit des fonctionnalités pour créer, lire, mettre à jour et supprimer des carnets d'adresses et des adresses associées.
+This application is a RESTful API developed in Java with Jersey that allows you to manage an address book. It provides features to create, read, update, and delete address books and associated addresses.
 
-## Fonctionnalités
+## Features
 
-- Créer un nouveau carnet d'adresses
-- Lister tous les carnets d'adresses existants
-- Supprimer un carnet d'adresses existant
-- Ajouter une nouvelle adresse à un carnet spécifique
-- Lister toutes les adresses d'un carnet spécifique
-- Récupérer les détails d'une adresse spécifique
-- Supprimer une adresse spécifique d'un carnet
+- Create a new address book
+- List all existing address books
+- Delete an existing address book
+- Add a new address to a specific address book
+- List all addresses in a specific address book
+- Retrieve details of a specific address
+- Delete a specific address from an address book
 
-## Technologies utilisées
+## Technologies Used
 
 - Java
 - Jersey (JAX-RS)
 - MySQL
 
-## Prérequis
+## Prerequisites
 
-- Java Development Kit (JDK) installé
-- MySQL Server installé
+- Java Development Kit (JDK) installed
+- MySQL Server installed
 
 ## Configuration
 
-1. Clonez le dépôt GitHub sur votre machine locale.
-2. Configurez les paramètres de connexion à la base de données MySQL dans le fichier `SingletonConnection.java`.
-3. Créez la base de données et les tables nécessaires en exécutant les scripts SQL fournis.
+1. Clone the GitHub repository to your local machine.
+2. Configure the MySQL database connection settings in the `SingletonConnection.java` file.
+3. Create the database and necessary tables by executing the provided SQL scripts.
 
-## Exécution
+## Execution
 
-1. Compilez le code source Java.
-2. Déployez l'application sur un serveur d'applications compatible avec Jersey.
-3. Accédez aux ressources RESTful en utilisant l'URL de base et les chemins d'accès appropriés.
+1. Compile the Java source code.
+2. Deploy the application to a Jersey-compatible application server.
+3. Access the RESTful resources using the base URL and appropriate paths.
 
-## Exemples d'utilisation
+## Usage Examples
 
-- Créer un nouveau carnet d'adresses :
-  `POST /carnets` avec les données du carnet dans le corps de la requête.
+- Create a new address book:
+ `POST /carnets` with the address book data in the request body.
 
-- Lister tous les carnets d'adresses :
-  `GET /carnets`
+- List all address books:
+ `GET /carnets`
 
-- Supprimer un carnet d'adresses :
-  `DELETE /carnets` avec le nom du carnet dans le corps de la requête.
+- Delete an address book:
+ `DELETE /carnets` with the address book name in the request body.
 
-- Ajouter une nouvelle adresse :
-  `POST /carnets/{nom_carnet}/adresses` avec les données de l'adresse dans le corps de la requête.
+- Add a new address:
+ `POST /carnets/{nom_carnet}/adresses` with the address data in the request body.
 
-- Lister toutes les adresses d'un carnet :
-  `GET /carnets/{nom_carnet}/adresses`
+- List all addresses in an address book:
+ `GET /carnets/{nom_carnet}/adresses`
 
-- Récupérer les détails d'une adresse :
-  `GET /carnets/{nom_carnet}/adresses/{nom_personne}`
+- Retrieve details of an address:
+ `GET /carnets/{nom_carnet}/adresses/{nom_personne}`
 
-- Supprimer une adresse :
-  `DELETE /carnets/{nom_carnet}/adresses` avec le nom de la personne dans le corps de la requête.
+- Delete an address:
+ `DELETE /carnets/{nom_carnet}/adresses` with the person's name in the request body.
 
 ## Contribution
 
-Les contributions sont les bienvenues ! Si vous avez des suggestions d'amélioration, des corrections de bogues ou de nouvelles fonctionnalités, n'hésitez pas à soumettre une pull request.
+Contributions are welcome! If you have any suggestions for improvements, bug fixes, or new features, feel free to submit a pull request.
 
-## Licence
+## License
 
-Ce projet est sous licence [MIT](LICENSE).
+This project is licensed under the [MIT](LICENSE) license.
