@@ -1,6 +1,6 @@
 # Address Book RESTful API
 
-This application is a RESTful API developed in Java with Jersey that allows you to manage an address book. It provides features to create, read, update, and delete address books and associated addresses.
+This application is a RESTful API developed in Java with Jersey that allows you to manage an address book. It provides features to create, read, update, and delete address books and associated addresses. To access the files, you need to write the following link in your browser: `http://localhost:8080/tprest/webapi/carnets`. You must have MySQL running, either through XAMPP or another method.
 
 ## Features
 
@@ -38,25 +38,19 @@ This application is a RESTful API developed in Java with Jersey that allows you 
 ## Usage Examples
 
 - Create a new address book:
- `POST /carnets` with the address book data in the request body.
-
+  `POST http://localhost:8080/tprest/webapi/carnets` with the address book data in the request body.
 - List all address books:
- `GET /carnets`
-
+  `GET http://localhost:8080/tprest/webapi/carnets`
 - Delete an address book:
- `DELETE /carnets` with the address book name in the request body.
-
+  `DELETE http://localhost:8080/tprest/webapi/carnets` with the address book name in the request body.
 - Add a new address:
- `POST /carnets/{nom_carnet}/adresses` with the address data in the request body.
-
+  `POST http://localhost:8080/tprest/webapi/carnets/{nom_carnet}/adresses` with the address data in the request body.
 - List all addresses in an address book:
- `GET /carnets/{nom_carnet}/adresses`
-
+  `GET http://localhost:8080/tprest/webapi/carnets/{nom_carnet}/adresses`
 - Retrieve details of an address:
- `GET /carnets/{nom_carnet}/adresses/{nom_personne}`
-
+  `GET http://localhost:8080/tprest/webapi/carnets/{nom_carnet}/adresses/{nom_personne}`
 - Delete an address:
- `DELETE /carnets/{nom_carnet}/adresses` with the person's name in the request body.
+  `DELETE http://localhost:8080/tprest/webapi/carnets/{nom_carnet}/adresses` with the person's name in the request body.
 
 ## Contribution
 
